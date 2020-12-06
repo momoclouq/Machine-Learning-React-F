@@ -7,6 +7,9 @@
 `npm install` \
 Install all available dependencies needed for the project
 
+## Don't understand how the project work?
+check **structure.md** file
+
 ## Available Scripts
 
 In the project directory, you can run:
