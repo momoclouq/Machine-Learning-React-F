@@ -13,7 +13,7 @@ class Home extends Component {
                 {/*first segment*/}
                 <section className="snap-child">
                     <Navbar/> {/*navigation bar component - status - in production*/}
-                    <div><Veil/></div> {/*introduction panel component - status - in production*/}
+                    <Veil/> {/*introduction panel component - status - in production*/}
                 </section>
 
                 {/*second segment*/}

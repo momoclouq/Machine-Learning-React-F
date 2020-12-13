@@ -47,5 +47,25 @@ Represent the navigation bar, include a dropdown menu (**Menu.js**) and a logo o
 ----------------------
 
 ### Home/Menu.js
-Represent a dropdown menu which contains the links to other parts of the website such as algorithms and homepage
+Represent a dropdown menu which contains the links to other parts of the website:  algorithms and homepage.
+
+----------------------
+
+### Home/FirstSegment/Veil.js
+A basic introduction panel for the homepage, introducing design skills of the group
+
+----------------------
+
+### Home/SecondSegment/Algorithms.js
+A container for the AlgorithmCarousel, mostly for proper structure and styling
+
+----------------------
+
+### Home/SecondSegment/AlgorithmCarousel.js
+A carousel displaying panels of multiple algorithms (represented as components), using the react-slick dependency
+- specification: show dots, speed: 500 (fast), autoplay is true
+
+
+
+
 
