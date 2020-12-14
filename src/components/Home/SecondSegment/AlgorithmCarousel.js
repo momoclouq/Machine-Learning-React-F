@@ -1,5 +1,11 @@
 import {Component} from 'react';
 import Slider from 'react-slick';
+import LinearRegressionCard from './LinearRegressionCard';
+import LogisticRegressionCard from './LogisticRegressionCard';
+import NeuralNetworkCard from './NeuralNetworkCard';
+import ObjectDetectionCard from './ObjectDetectionCard';
+import KNearestNeighborsCard from './KNearestNeighborsCard';
+import KMeanCard from './KMeanCard';
 
 
 class AlgorithmCarousel extends Component {
@@ -13,26 +19,34 @@ class AlgorithmCarousel extends Component {
         }
 
         return(
-            <Slider {...settings}>
-                <div>
-                    <LinearRegressionCard/>
-                </div>
-                <div>
-                    <LogisticRegressionCard/>
-                </div>
-                <div>
-                    <NeuralNetworkCard/>
-                </div>
-                <div>
-                    <ObjectDetectionCard/>
-                </div>
-                <div>
-                    <KNearestNeighborsCard/>
-                </div>
-                <div>
-                    <KMeanCard/>
-                </div>
-            </Slider>
+            <div className="carousel" style={
+                {
+                    padding: "40px",
+                    backgroundColor: "#9999ff"
+                }
+            }>
+                <Slider {...settings}>
+                    <div>
+                        <LinearRegressionCard/>
+                    </div>
+                    <div>
+                        <LogisticRegressionCard/>
+                    </div>
+                    <div>
+                        <NeuralNetworkCard/>
+                    </div>
+                    <div>
+                        <ObjectDetectionCard/>
+                    </div>
+                    <div>
+                        <KNearestNeighborsCard/>
+                    </div>
+                    <div>
+                        <KMeanCard/>
+                    </div>
+                </Slider>
+            </div>
+            
         );
     }
 }

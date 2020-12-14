@@ -32,6 +32,10 @@ Just to call the "App" component, nothing changed here
 
 ----------------------
 
+## Homepage
+
+----------------------
+
 ### Home/Home.js
 "Home" component, which represent the homepage, includes 4 sub-segments
 - Segment 1: An introduction panel and the navigation bar
@@ -63,7 +67,38 @@ A container for the AlgorithmCarousel, mostly for proper structure and styling
 
 ### Home/SecondSegment/AlgorithmCarousel.js
 A carousel displaying panels of multiple algorithms (represented as components), using the react-slick dependency
-- specification: show dots, speed: 500 (fast), autoplay is true
+- specification for slick-react: show dots, speed: 500 (fast), autoplay is true
+
+----------------------
+
+#### Home/SecondSegment/LinearRegressionCard.js
+A panel displaying basic information about linear regression and its visualization (image),
+the 2 parts are split at the middle of the panel
+
+----------------------
+
+#### Home/SecondSegment/LogisticRegressionCard.js
+A panel displaying basic information about logistic regression. Similar to other cards.
+
+----------------------
+
+#### Home/SecondSegment/NeuralNetworkCard.js
+A panel displaying basic information about neural network. Similar to other cards.
+
+----------------------
+
+#### Home/SecondSegment/ObjectDetectionCard.js
+A panel displaying basic information about object detection card. Similar to other cards.
+
+----------------------
+
+#### Home/SecondSegment/KNearestNeighborsCard.js
+A panel displaying basic information about K nearest neighbors card. Similar to other cards.
+
+----------------------
+
+#### Home/SecondSegment/KMeanCard.js
+A panel displaying basic information about K mean card. Similar to other cards.
 
 
 

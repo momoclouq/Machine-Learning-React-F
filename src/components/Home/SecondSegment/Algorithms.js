@@ -1,6 +1,6 @@
 //display the algorithm carousel
 //serve as a container
-import AlgorithmCarousel from '.AlgorithmCarousel';
+import AlgorithmCarousel from './AlgorithmCarousel';
 
 const Algorithms = (props) => {
     return(

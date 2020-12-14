@@ -3,7 +3,7 @@ import logo from "../../../images/logo.jpg";
 
 const Navbar = (props) => {
     return(
-        <nav classname="navbar">
+        <nav className="navbar">
             <Menu />
             <a href="/">
                     <img src={logo} alt="logo" id="projectLogo" ></img>
