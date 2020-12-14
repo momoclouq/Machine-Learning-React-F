@@ -101,6 +101,28 @@ A panel displaying basic information about K nearest neighbors card. Similar to 
 A panel displaying basic information about K mean card. Similar to other cards.
 
 
+----------------------
+
+### Home/ThirdSegment/PoweredBy.js
+A panel dedicated for displaying notable technologies used by the project. Using react-animated-css dependency for special animation. Consists of:
+- ConvNetCard.js: picture and styling for ConvNetJS
+- P5Card.js: picture and styling for P5.js technology
+- TensorflowCard.js: picture and styling for tensorflow.js
+
+----------------------
+
+#### Home/ThirdSegment/P5Card.js
+A panel including styling and image for P5.js
+
+----------------------
+
+#### Home/ThirdSegment/ConvNetCard.js
+A panel including styling and image for ConvNetJS 
+
+----------------------
+
+#### Home/ThirdSegment/TensorflowCard.js
+A panel including styling and image for tensorflow.js
 
 
 

@@ -41,3 +41,23 @@
 .carousel div {
   margin: auto;
 }
+
+/*powered by segment*/
+.poweredBy-outer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c29ae6
+}
+
+.poweredBy-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.poweredBy-element {
+  border: 1px dotted pink;
+}
