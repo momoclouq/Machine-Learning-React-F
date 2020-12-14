@@ -61,3 +61,24 @@
 .poweredBy-element {
   border: 1px dotted pink;
 }
+
+/*AboutUs segment*/
+.about-outer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c3c9eb
+}
+
+.about-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about-element {
+  border: 1px dotted pink;
+  margin: 30px;
+}

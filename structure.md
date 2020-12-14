@@ -124,5 +124,9 @@ A panel including styling and image for ConvNetJS
 #### Home/ThirdSegment/TensorflowCard.js
 A panel including styling and image for tensorflow.js
 
+----------------------
+
+### Home/FourthSegment/AboutUs.js
+A panel dedicated for displaying information about the creators Us!, similar in design with PoweredBy.js
 
 
