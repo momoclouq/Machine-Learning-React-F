@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^12.1.10",
     "convnetjs": "^0.3.0",
     "react": "^17.0.1",
+    "react-animate-on-scroll": "^2.1.5",
     "react-animated-css": "^1.2.1",
     "react-dom": "^17.0.1",
     "react-mathjax": "^1.0.1",

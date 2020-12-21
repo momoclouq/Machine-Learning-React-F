@@ -2,8 +2,7 @@
 const Veil = (props) => {
     const style = {
         width: "100%",
-        height: "30vh",
-        maxHeight: "300px",
+        height: "90%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

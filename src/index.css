@@ -49,9 +49,11 @@
   justify-content: space-around;
 }
 
+
+
 /*powered by segment*/
 .poweredBy-outer {
-  height: 60vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -73,6 +75,7 @@
 /*AboutUs segment*/
 .about-outer {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,4 +92,17 @@
 .about-element {
   border: 1px dotted pink;
   margin: 30px;
+}
+
+
+/*snapping elements*/
+.snap-container {
+  scroll-snap-type: y proximity;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.snap-child {
+  height: 100vh;
+  scroll-snap-align: start;
 }

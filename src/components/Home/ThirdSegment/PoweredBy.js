@@ -6,6 +6,8 @@ import P5Card from './P5Card';
 import TensorflowCard from './TensorflowCard';
 import ConvNetCard from './ConvNetCard';
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 class PoweredBy extends Component{
     constructor(props){
         super(props);
@@ -30,6 +32,14 @@ class PoweredBy extends Component{
             <div className="poweredBy-outer">
                 <h1>Powered By</h1>
                 <div className="poweredBy-inner">
+                    <div className="poweredBy-element">
+                            <ScrollAnimation 
+                                animateIn="fadeInDown" 
+                                animateOut="fadeOut"
+                                duration="0.8"
+                                animateOnce="true"
+                            ><P5Card/></ScrollAnimation> 
+                    </div>
                     <div className="poweredBy-element">
                         <Animated 
                             animationIn="fadeInDown"

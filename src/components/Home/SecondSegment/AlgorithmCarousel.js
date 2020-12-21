@@ -22,7 +22,8 @@ class AlgorithmCarousel extends Component {
             <div className="carousel" style={
                 {
                     padding: "40px",
-                    backgroundColor: "#9999ff"
+                    backgroundColor: "#9999ff",
+                    height: "100%"
                 }
             }>
                 <Slider {...settings}>

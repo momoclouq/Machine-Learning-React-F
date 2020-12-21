@@ -6,7 +6,11 @@ import {Link} from "react-router-dom";
 
 const Navbar = (props) => {
     return(
-        <nav className="navbar">
+        <nav className="navbar" style={
+            {
+                height: "10%"
+            }
+        }>
             <Menu />
             <Link to="/">
                     <img src={logo} alt="logo" id="projectLogo" ></img>
