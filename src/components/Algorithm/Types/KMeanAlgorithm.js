@@ -6,7 +6,7 @@ import PanelChild from '../Panel/PanelChild';
 import Sketch from '../Sketches/kmeanclustering/Clustering';
 
 import { useState } from 'react';
-import Menu from '../Menu';
+import Menu from '../../Home/Menu';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';

@@ -9,7 +9,7 @@ import LinearRegressionLoss from './linearregressionloss.png';
 import GradientDescent from './gradientdescent.png';
 
 import { useState } from 'react';
-import Menu from '../../Menu';
+import Menu from '../../../Home/Menu';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';

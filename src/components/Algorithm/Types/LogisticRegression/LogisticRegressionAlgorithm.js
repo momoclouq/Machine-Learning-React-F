@@ -10,7 +10,7 @@ import GradientDescent from './gradientdescent.png';
 import Sketch from '../../Sketches/logisticregression/LositicRegression';
 
 import { useState } from 'react';
-import Menu from '../../Menu';
+import Menu from '../../../Home/Menu';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';

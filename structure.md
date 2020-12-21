@@ -28,7 +28,7 @@ Just to call the "App" component, nothing changed here
 ### App.js
 "App" component, using React router dependencies
 - call "Home" component (**Home.js**)
-- Create route to all other algorithms
+- Create route to all other algorithms (using React-router)
 
 ----------------------
 
