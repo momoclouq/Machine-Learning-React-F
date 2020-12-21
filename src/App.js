@@ -17,11 +17,14 @@ import KMeanClusteringAlgorithm from "./components/Algorithm/Types/KMeanAlgorith
 import KNearestNeighborAlgorithm from "./components/Algorithm/Types/KNearestNeighborAlgorithm";
 import ObjectDetectionAlgorithm from "./components/Algorithm/Types/ObjectDetectionAlgorithm";
 
+//import component for scrolling control
+import ScrollToTop from "./components/Common/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
         <BrowserRouter>
+            <ScrollToTop/>
             <Switch>
               <Route exact path="/">
                 <Home />

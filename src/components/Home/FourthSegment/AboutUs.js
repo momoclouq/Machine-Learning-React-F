@@ -1,4 +1,6 @@
 //import images for each members
+import avatar from "../../../images/avatar.png";
+
 import React from 'react';
 import {Component} from 'react';
 import {Animated} from 'react-animated-css';
@@ -36,7 +38,7 @@ class AboutUs extends Component {
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
-                            <img src="#" alt="Avatar"/>
+                            <img src={avatar} alt="Avatar"/>
                             <h1>Tran Son Phat</h1>
                         </Animated>
                     </div>
@@ -46,7 +48,7 @@ class AboutUs extends Component {
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
-                            <img src="#" alt="Avatar"/>
+                            <img src={avatar} alt="Avatar"/>
                             <h1>Pham Hoang Minh</h1>
                         </Animated>
                     </div>
@@ -56,8 +58,18 @@ class AboutUs extends Component {
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
-                            <img src="#" alt="Avatar"/>
-                            <h1>Myoi Mina</h1>
+                            <img src={avatar} alt="Avatar"/>
+                            <h1>Nguyen Truc Nhan</h1>
+                        </Animated>
+                    </div>
+                    <div className="about-element">
+                        <Animated 
+                            animationIn="bounceInLeft" 
+                            animationOut="fadeOut"
+                            animationInDuration="800"
+                            isVisible={this.state.visible}>
+                            <img src={avatar} alt="Avatar"/>
+                            <h1>Do Ha Minh Long</h1>
                         </Animated>
                     </div>
                 </div>

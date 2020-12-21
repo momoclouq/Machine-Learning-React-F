@@ -4,7 +4,7 @@ import AlgorithmCarousel from './AlgorithmCarousel';
 
 const Algorithms = (props) => {
     return(
-        <div>
+        <div id="carousel">
             <h1>Explore Machine Learning</h1>
             <AlgorithmCarousel />
         </div>

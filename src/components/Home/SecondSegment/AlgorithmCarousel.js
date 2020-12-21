@@ -46,7 +46,6 @@ class AlgorithmCarousel extends Component {
                     </div>
                 </Slider>
             </div>
-            
         );
     }
 }

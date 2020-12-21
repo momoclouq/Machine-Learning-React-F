@@ -19,7 +19,7 @@ const Veil = (props) => {
             }>
                 <h1 className="home-title">Algorithms</h1>
                 <h2 className="home-subtitle">Machine learning illustrated</h2>
-                <a href="#" className="button is-white home-button">Explore</a>
+                <a href="#carousel" className="button is-white home-button">Explore</a>
             </div>
         </div>
     );

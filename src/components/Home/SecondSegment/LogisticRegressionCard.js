@@ -1,4 +1,8 @@
-//import image for visualization of the algorithm
+//image for logistic regression
+import logisticpic from "../../../images/classification.png";
+
+//Link for Router
+import {Link} from "react-router-dom";
 
 const LogisticRegressionCard = (props) => {
     return(
@@ -7,11 +11,11 @@ const LogisticRegressionCard = (props) => {
                 <h1>Chapter 2</h1>
                 <h2>Logistic Regression</h2>
                 <h3>Find a linear hyperplane for binary classification tasks.</h3>
-                <a href="#">Go to chapter 2</a>
+                <Link to="/chapter2">Go to chapter 2</Link>
             </div>
 
             <div className="panel-right">
-                <img src="#"/>
+                <img src={logisticpic} alt="logistic-regression-representation"/>
             </div>
         </div>
     );

@@ -1,4 +1,8 @@
-//import an image for the algorithm in images
+//picture for linear regression
+import linearpic from "../../../images/regression.png";
+
+//Link for Router
+import {Link} from 'react-router-dom';
 
 const LinearRegressionCard = (props) => {
     return(
@@ -7,10 +11,10 @@ const LinearRegressionCard = (props) => {
                 <h1>Chapter 1</h1>
                 <h2>Linear Regression</h2>
                 <h3>Find a best-fit hyperplane to estimate the relationships between random variables.</h3>
-                <a href="#">Go to chapter 1</a>
+                <Link to="/chapter1">Go to chapter 1</Link>
             </div>
             <div className="panel-right">
-                <img src="#"/>
+                <img src={linearpic} alt="linear-regression-representation"/>
             </div>
         </div>
     );
