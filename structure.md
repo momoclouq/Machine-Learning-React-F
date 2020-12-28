@@ -47,6 +47,7 @@ Just to call the "App" component, nothing changed here
 
 ### Home/FirstSegment/Navbar.js
 Represent the navigation bar, include a dropdown menu (**Menu.js**) and a logo of the project
+- Can be done in both CSS and React component
 
 ----------------------
 
@@ -128,5 +129,28 @@ A panel including styling and image for tensorflow.js
 
 ### Home/FourthSegment/AboutUs.js
 A panel dedicated for displaying information about the creators Us!, similar in design with PoweredBy.js
+
+----------------------
+
+## Algorithm
+
+----------------------
+
+### Need to be updated
+
+----------------------
+
+## Common
+Store components used by every other components
+
+----------------------
+
+### Common/ScrollToTop.js
+A special component with the main function is to move the webpage view to the top everytime the pages change.
+
+
+
+
+
 
 

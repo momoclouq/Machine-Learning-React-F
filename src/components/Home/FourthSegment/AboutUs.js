@@ -11,22 +11,47 @@ class AboutUs extends Component {
 
         this.state = {
             visible: false
-        }
+        };
 
-        this.changeVisible = this.changeVisible.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
     }
 
-    changeVisible(){
-        this.setState((previousState) => {
-            return {
-                visible: !previousState.visible
-            }
-        });
+    componentDidMount(){
+        document
+            .querySelector('.snap-container')
+            .addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount(){
+        document
+            .querySelector('.snap-container')
+            .removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll(){
+        const box = document.querySelector('.about-outer');
+        if (this.isInViewport(box)) {
+            this.setState({
+                visible: true
+            });
+            document
+                .querySelector('.snap-container')
+                .removeEventListener('scroll', this.handleScroll);
+        }
+    }
+
+    isInViewport(el){
+        let rect = el.getBoundingClientRect();
+        return rect.bottom <= window.innerHeight + 10;
     }
 
     render(){
         return(
-            <div className="about-outer">
+            <div className="about-outer" style={
+                {
+                    height: "100%"
+                }
+            }>
                 <h1>About</h1>
                 <p>The Machine Learning Illustrated project was created by Phat and Minh, two undergraduates at RMIT university. The goals of this project is to make machine learning algorithms more intuitive and accessible. It is also heavily influenced by <a href="https://seeing-theory.brown.edu/">Seeing Theory</a></p>
                 <h1>Authors</h1>
@@ -73,8 +98,6 @@ class AboutUs extends Component {
                         </Animated>
                     </div>
                 </div>
-
-                <button type="button" onClick={this.changeVisible}>start animation</button>
             </div>
         );
     }

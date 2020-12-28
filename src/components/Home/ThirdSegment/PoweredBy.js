@@ -16,15 +16,36 @@ class PoweredBy extends Component{
             visible: false
         };
 
-        this.changeVisible = this.changeVisible.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
     }
 
-    changeVisible(){
-        this.setState((previousState) => {
-            return {
-                visible: !previousState.visible
-            }
-        });
+    componentDidMount(){
+        document
+            .querySelector('.snap-container')
+            .addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount(){
+        document
+            .querySelector('.snap-container')
+            .removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll(){
+        const box = document.querySelector('.poweredBy-inner');
+        if (this.isInViewport(box)) {
+            this.setState({
+                visible: true
+            });
+            document
+                .querySelector('.snap-container')
+                .removeEventListener('scroll', this.handleScroll);
+        }
+    }
+
+    isInViewport(el){
+        let rect = el.getBoundingClientRect();
+        return rect.bottom <= window.innerHeight + 10;
     }
 
     render(){
@@ -33,19 +54,11 @@ class PoweredBy extends Component{
                 <h1>Powered By</h1>
                 <div className="poweredBy-inner">
                     <div className="poweredBy-element">
-                            <ScrollAnimation 
-                                animateIn="fadeInDown" 
-                                animateOut="fadeOut"
-                                duration="0.8"
-                                animateOnce="true"
-                            ><P5Card/></ScrollAnimation> 
-                    </div>
-                    <div className="poweredBy-element">
                         <Animated 
                             animationIn="fadeInDown"
                             animationOut="fadeOut"
                             isVisible={this.state.visible}
-                            animationInDuration="800"
+                            animationInDuration="400"
                         >
                             <P5Card/>
                         </Animated>
@@ -55,7 +68,7 @@ class PoweredBy extends Component{
                             animationIn="fadeInDown"
                             animationOut="fadeOut"
                             isVisible={this.state.visible}
-                            animationInDuration="800"
+                            animationInDuration="400"
                         >
                             <ConvNetCard/>
                         </Animated>
@@ -65,14 +78,13 @@ class PoweredBy extends Component{
                             animationIn="fadeInDown"
                             animationOut="fadeOut"
                             isVisible={this.state.visible}
-                            animationInDuration="800"
+                            animationInDuration="400"
                         >
                             <TensorflowCard/>
                         </Animated>
                     </div>
                     
                 </div>
-                <div><button type="button" onClick={this.changeVisible}>Change</button></div>
             </div>
         );
     }
