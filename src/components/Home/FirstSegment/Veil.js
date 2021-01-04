@@ -1,16 +1,14 @@
-//In production
 const Veil = (props) => {
-    const style = {
+    const styleVeil = {
         width: "100%",
-        height: "90%",
+        height: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        border: "1px solid pink"
     };
 
     return(
-        <div style={style}>
+        <div style={styleVeil}>
             <div style={
                 {
                     textAlign: "center"
@@ -18,10 +16,11 @@ const Veil = (props) => {
             }>
                 <h1 className="home-title">Algorithms</h1>
                 <h2 className="home-subtitle">Machine learning illustrated</h2>
-                <a href="#carousel" className="button is-white home-button">Explore</a>
+                <button onClick={props.smoothScroll} className="home-button">Explore</button>
             </div>
         </div>
     );
 }
+    
 
 export default Veil;

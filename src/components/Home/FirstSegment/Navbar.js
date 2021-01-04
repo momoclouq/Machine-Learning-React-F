@@ -12,9 +12,6 @@ const Navbar = (props) => {
             }
         }>
             <Menu />
-            <Link to="/">
-                    <img src={logo} alt="logo" id="projectLogo" ></img>
-            </Link>
         </nav>
     );
 }

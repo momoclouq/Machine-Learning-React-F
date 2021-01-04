@@ -12,6 +12,8 @@ class AlgorithmCarousel extends Component {
     render(){
         const settings = {
             dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
             infinite: true,
             speed: 500,
             slidesToShow: 1,
@@ -19,13 +21,7 @@ class AlgorithmCarousel extends Component {
         }
 
         return(
-            <div className="carousel" style={
-                {
-                    padding: "40px",
-                    backgroundColor: "#9999ff",
-                    height: "100%"
-                }
-            }>
+            <div className="carousel">
                 <Slider {...settings}>
                     <div>
                         <LinearRegressionCard/>

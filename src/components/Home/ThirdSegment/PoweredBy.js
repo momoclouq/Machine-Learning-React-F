@@ -6,8 +6,6 @@ import P5Card from './P5Card';
 import TensorflowCard from './TensorflowCard';
 import ConvNetCard from './ConvNetCard';
 
-import ScrollAnimation from "react-animate-on-scroll";
-
 class PoweredBy extends Component{
     constructor(props){
         super(props);
@@ -32,7 +30,7 @@ class PoweredBy extends Component{
     }
 
     handleScroll(){
-        const box = document.querySelector('.poweredBy-inner');
+        const box = document.querySelector('.poweredBy-title');
         if (this.isInViewport(box)) {
             this.setState({
                 visible: true
@@ -51,40 +49,43 @@ class PoweredBy extends Component{
     render(){
         return(
             <div className="poweredBy-outer">
-                <h1>Powered By</h1>
-                <div className="poweredBy-inner">
-                    <div className="poweredBy-element">
+                <h1 className="poweredBy-title">Powered By</h1>
+                <div className="columns">
+                    <div className="column">
                         <Animated 
                             animationIn="fadeInDown"
                             animationOut="fadeOut"
                             isVisible={this.state.visible}
                             animationInDuration="400"
+                            animationInDelay="300"
                         >
                             <P5Card/>
                         </Animated>
                     </div>
-                    <div className="poweredBy-element">
+                    <div className="column">
                         <Animated 
                             animationIn="fadeInDown"
                             animationOut="fadeOut"
                             isVisible={this.state.visible}
                             animationInDuration="400"
+                            animationInDelay="300"
                         >
                             <ConvNetCard/>
                         </Animated>
                     </div>
-                    <div className="poweredBy-element">
+                    <div className="column">
                         <Animated 
                             animationIn="fadeInDown"
                             animationOut="fadeOut"
                             isVisible={this.state.visible}
                             animationInDuration="400"
+                            animationInDelay="300"
                         >
                             <TensorflowCard/>
                         </Animated>
                     </div>
-                    
                 </div>
+                
             </div>
         );
     }

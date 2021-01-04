@@ -47,54 +47,50 @@ class AboutUs extends Component {
 
     render(){
         return(
-            <div className="about-outer" style={
-                {
-                    height: "100%"
-                }
-            }>
-                <h1>About</h1>
-                <p>The Machine Learning Illustrated project was created by Phat and Minh, two undergraduates at RMIT university. The goals of this project is to make machine learning algorithms more intuitive and accessible. It is also heavily influenced by <a href="https://seeing-theory.brown.edu/">Seeing Theory</a></p>
-                <h1>Authors</h1>
+            <div className="about-outer">
+                <h1 className="about-title">About</h1>
+                <p className="about-content">The Machine Learning Illustrated project was created by Phat and Minh, two undergraduates at RMIT university. The goals of this project is to make machine learning algorithms more intuitive and accessible. It is also heavily influenced by <a href="https://seeing-theory.brown.edu/">Seeing Theory</a></p>
+                <h1 className="about-title">Authors</h1>
 
-                <div className="about-inner">
-                    <div className="about-element">
+                <div className="columns">
+                    <div className="column about-centerpiece">
                         <Animated 
                             animationIn="bounceInLeft" 
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
                             <img src={avatar} alt="Avatar"/>
-                            <h1>Tran Son Phat</h1>
+                            <h1 className="about-name">Tran Son Phat</h1>
                         </Animated>
                     </div>
-                    <div className="about-element">
+                    <div className="column about-centerpiece">
                         <Animated 
                             animationIn="bounceInLeft" 
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
                             <img src={avatar} alt="Avatar"/>
-                            <h1>Pham Hoang Minh</h1>
+                            <h1 className="about-name">Pham Hoang Minh</h1>
                         </Animated>
                     </div>
-                    <div className="about-element">
+                    <div className="column about-centerpiece">
                         <Animated 
                             animationIn="bounceInLeft" 
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
                             <img src={avatar} alt="Avatar"/>
-                            <h1>Nguyen Truc Nhan</h1>
+                            <h1 className="about-name">Nguyen Truc Nhan</h1>
                         </Animated>
                     </div>
-                    <div className="about-element">
+                    <div className="column about-centerpiece">
                         <Animated 
                             animationIn="bounceInLeft" 
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
                             <img src={avatar} alt="Avatar"/>
-                            <h1>Do Ha Minh Long</h1>
+                            <h1 className="about-name">Do Ha Minh Long</h1>
                         </Animated>
                     </div>
                 </div>

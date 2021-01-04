@@ -3,11 +3,14 @@ import tensorflow from "../../../images/tensorflow.png";
 
 const TensorflowCard = (props) => {
     return(
-        <div className="powered-card">
+        <div className="poweredBy-card">
             <img src={tensorflow} alt="tensorflow.js logo"/>
-            <h1>Tensorflow.js</h1>
-            <div>A library for machine learning in Javascript</div>
-            <a href="https://www.tensorflow.org/js">Explore</a>
+            <h1 className="poweredBy-card-title">Tensorflow.js</h1>
+            <div className="poweredBy-card-content">A library for machine learning in Javascript</div>
+            <a className="poweredBy-card-button" 
+                href="https://www.tensorflow.org/js"
+                style={{background: '#F4A261'}}
+            >Explore</a>
         </div>
     );
 }

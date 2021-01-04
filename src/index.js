@@ -7,7 +7,8 @@ import App from './App';
 import "slick-carousel/slick/slick.css";
 import 'slick-carousel/slick/slick-theme.css';
 
-//css for react-animated-css
+//css for bulma
+import 'bulma/css/bulma.css'
 
 //index.js is only to call App component
 

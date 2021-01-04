@@ -3,6 +3,123 @@ body{
   padding: 0;
 }
 
+/*veil section*/
+.home-button {
+  font-size: 3vh !important;
+  border-radius: 3vh !important;
+  background: black;
+  color: white !important;
+  outline: none;
+  border: none;
+  padding: 0.5em 2em;
+  cursor: pointer;
+}
+
+.home-button:hover{
+  background: linear-gradient(135deg, #6e8efb, #a777e3);;
+}
+
+.home-title {
+  color: #F4A261;
+  font-size: 10vh;
+  margin-bottom: 0;
+}
+
+.home-subtitle {
+  color: #457b9d;
+  font-size: 4vh;
+}
+
+
+/*carousel section*/
+.carousel-title {
+  height: 10vh;
+  font-size: 7vh;
+  color: #457b9d;
+  text-align: center;
+  padding-top: 2vh;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  padding-bottom: 0;
+  padding-top: 0;
+  height: 80vh;
+}
+
+.carousel div {
+  margin: auto;
+}
+
+.slick-prev {
+  font-size: 5vh !important;
+  left: 3% !important;
+  z-index: 1;
+}
+
+.slick-next {
+  font-size: 5vh !important;
+  right: 3% !important;
+  z-index: 1;
+}
+
+.slick-prev:before {
+  font-size: 5vh !important;
+  color: #aaaaaa !important;
+}
+.slick-next:before {
+  font-size: 5vh !important;
+  color: #aaaaaa !important;
+}
+
+/*Styling for card - in carousel*/
+.panel {
+  width: 85%;
+  margin-top: 0 !important;
+  height: 80vh;
+  display: flex;
+}
+
+.panel-left {
+  position: relative;
+  left: 1em;
+  padding: 40px !important;
+  background: #ECECEC;
+  text-align: left;
+  height: 100%;
+  width: 40%;
+}
+
+.panel-right {
+  height: 100%;
+  width: 55%;
+}
+
+.card-chapter {
+  color: #457b9d;
+  font-size: 4vh;
+}
+
+.card-name {
+  color: #F4A261;
+  font-size: 5vh;
+  margin-bottom: 20px;
+}
+
+.card-description {
+  font-size: 3vh;
+}
+
+.card-button {
+  font-size: 2vh !important;
+  border-radius: 30px !important;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+}
+
 /*Menu section*/
 .Menu-Dropdown-Button {
   background-color: white;
@@ -44,61 +161,124 @@ body{
   height: 40px;
 }
 
-.carousel div {
-  margin: auto;
-}
-
-/*carousel*/
-.columns {
-  display: flex;
-  justify-content: space-around;
-}
-
-
-
 /*powered by segment*/
-.poweredBy-outer {
-  height: 100%;
-  width: 100%;
+.poweredBy-title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#powered-by-section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: #c29ae6
+  justify-content: center
 }
 
-.poweredBy-inner {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.powered-by {
+  margin-top: 30px;
+  text-align: center;
 }
 
-.poweredBy-element {
-  border: 1px dotted pink;
+.poweredBy-title {
+  font-size: 7vh;
 }
+
+.poweredBy-card {
+  text-align: center;
+  margin: 2em;
+}
+
+.poweredBy-card-title {
+  font-size: 5vh;
+  margin: 10px;
+}
+
+.poweredBy-card-content {
+  display: inline-block;
+  width: 80%;
+  font-size: 3vh;
+  font-weight: 200;
+  color: #636363;
+}
+
+.poweredBy-card-button {
+  font-size: 3vh !important;
+  border-radius: 3vh !important;
+  margin: 20px;
+  min-width: 5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  width: 30%;
+}
+
+.poweredBy-card-button:hover {
+  color: white;
+}
+
 
 /*AboutUs segment*/
 .about-outer {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #c3c9eb
 }
 
-.about-inner {
+.about-outer p a {
+  color: #e0d8e3;
+  text-decoration: underline;
+}
+
+.about-outer p a:hover {
+  padding: 2px;
+  border-radius: 1px;
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+#about-us-section {
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center
 }
 
-.about-element {
-  border: 1px dotted pink;
-  margin: 30px;
+.about-title {
+  font-size: 7vh;
+  margin-bottom: 5px;
+  color: white;
 }
 
+.about-content {
+  font-size: 3vh;
+  font-weight: 200;
+  width: 50%;
+  display: inline-block;
+  color: white;
+}
+
+.about-link {
+  color: white;
+}
+
+.about-name {
+  font-size: 3vh;
+  font-weight: 200;
+  color: white;
+  display: block;
+}
+
+.about-centerpiece {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /*snapping elements and scrollbar*/
 .snap-container {
@@ -134,6 +314,6 @@ body::-webkit-scrollbar {
 }
 
 .snap-child {
-  height: 100%;
+  min-height: 100vh;
   scroll-snap-align: center;
 }
