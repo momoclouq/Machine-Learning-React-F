@@ -30,3 +30,4 @@ Other options: `yarn test`
 ## Deployment link: ?
 
 
+## Test cases link: https://docs.google.com/spreadsheets/d/16egQr4-GEtTIYtBvhZxhvFf4InmTadGncinNnBvP6RU/edit?usp=sharing
