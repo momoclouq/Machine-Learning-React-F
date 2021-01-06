@@ -8,10 +8,10 @@ const LogisticRegressionCard = (props) => {
     return(
         <div className="panel" style={{margin: "auto"}}>
             <div className="panel-left">
-                <h1>Chapter 2</h1>
-                <h2>Logistic Regression</h2>
-                <h3>Find a linear hyperplane for binary classification tasks.</h3>
-                <Link className="button" to="/chapter2">Go to chapter 2</Link>
+                <h1 className="card-chapter">Chapter 2</h1>
+                <h2 className="card-name">Logistic Regression</h2>
+                <h3 className="card-description">Find a linear hyperplane for binary classification tasks.</h3>
+                <Link className="button card-button" to="/chapter2">Go to chapter 2</Link>
             </div>
 
             <div className="panel-right">

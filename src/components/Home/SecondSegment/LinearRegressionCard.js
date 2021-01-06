@@ -8,10 +8,10 @@ const LinearRegressionCard = (props) => {
     return(
         <div className="panel">
             <div className="panel-left">
-                <h1>Chapter 1</h1>
-                <h2>Linear Regression</h2>
-                <h3>Find a best-fit hyperplane to estimate the relationships between random variables.</h3>
-                <Link className="button" to="/chapter1">Go to chapter 1</Link>
+                <h1 className="card-chapter">Chapter 1</h1>
+                <h2 className="card-name">Linear Regression</h2>
+                <h3 className="card-description">Find a best-fit hyperplane to estimate the relationships between random variables.</h3>
+                <Link className="button card-button" to="/chapter1">Go to chapter 1</Link>
             </div>
             <div className="panel-right">
                 <img className="card-image" src={linearpic} alt="linear-regression-representation"/>

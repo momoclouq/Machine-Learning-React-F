@@ -8,10 +8,10 @@ const KMeanCard = (props) => {
     return (
         <div className="panel">
             <div className="panel-left">
-                <h1>Chapter 6</h1>
-                <h2>K Mean Clustering</h2>
-                <h3>A traditional unsupervised learning method to cluster similar datapoints.</h3>
-                <Link className="button" to="/chapter6">Go to chapter 6</Link>
+                <h1 className="card-chapter">Chapter 6</h1>
+                <h2 className="card-name">K Mean Clustering</h2>
+                <h3 className="card-description">A traditional unsupervised learning method to cluster similar datapoints.</h3>
+                <Link className="button card-button" to="/chapter6">Go to chapter 6</Link>
             </div>
 
             <div className="panel-right">

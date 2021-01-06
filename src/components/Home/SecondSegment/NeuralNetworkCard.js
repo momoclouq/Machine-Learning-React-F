@@ -8,10 +8,10 @@ const NeuralNetworkCard = (props) => {
     return(
         <div className="panel" style={{margin: "auto"}}>
             <div className="panel-left">
-                <h1>Chapter 3</h1>
-                <h2>Neural Network</h2>
-                <h3>Discover complex decision boundaries by mimicking a human's brain.</h3>
-                <Link className="button" to="/chapter3">Go to chapter 3</Link>
+                <h1 className="card-chapter">Chapter 3</h1>
+                <h2 className="card-name">Neural Network</h2>
+                <h3 className="card-description">Discover complex decision boundaries by mimicking a human's brain.</h3>
+                <Link className="button card-button" to="/chapter3">Go to chapter 3</Link>
             </div>
 
             <div className="panel-right">

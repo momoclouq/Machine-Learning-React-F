@@ -35,7 +35,7 @@ function App() {
               </Route>
 
               <Route path="/chapter2">
-              <LogisiticAlgorithm />
+                <LogisiticAlgorithm />
               </Route>
 
               <Route path="/chapter3">

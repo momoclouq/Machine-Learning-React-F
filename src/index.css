@@ -13,9 +13,10 @@ body{
   border: none;
   padding: 0.5em 2em;
   cursor: pointer;
+  margin-top: 1em;
 }
 
-.home-button:hover{
+.home-button:hover {
   background: linear-gradient(135deg, #6e8efb, #a777e3);;
 }
 
@@ -74,20 +75,18 @@ body{
 
 /*Styling for card - in carousel*/
 .panel {
-  width: 85%;
+  width: 80%;
   margin-top: 0 !important;
   height: 80vh;
   display: flex;
 }
 
 .panel-left {
-  position: relative;
-  left: 1em;
   padding: 40px !important;
   background: #ECECEC;
   text-align: left;
   height: 100%;
-  width: 40%;
+  width: 45%;
 }
 
 .panel-right {
@@ -111,8 +110,8 @@ body{
 }
 
 .card-button {
-  font-size: 2vh !important;
-  border-radius: 30px !important;
+  margin-top: 1em;
+  border-radius: 20px !important;
 }
 
 .card-image {
@@ -121,39 +120,6 @@ body{
 }
 
 /*Menu section*/
-.Menu-Dropdown-Button {
-  background-color: white;
-  color: black;
-  padding: 20px;
-  font-size: 16px;
-  border: none;
-}
-
-.Menu-Dropdown-Wrapper {
-  position: relative;
-  display: inline-block;
-  border: 1px solid pink;
-}
-
-.Menu-Dropdown-List {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.Menu-Dropdown-Item {
-  color: black;
-  text-decoration: none;
-  padding: 12px;
-  display: block;
-}
-
-.Menu-Dropdown-Wrapper:hover .Menu-Dropdown-List {
-  display: block;
-}
 
 /*logo*/
 #projectLogo {
@@ -216,7 +182,6 @@ body{
 .poweredBy-card-button:hover {
   color: white;
 }
-
 
 /*AboutUs segment*/
 .about-outer {
@@ -316,4 +281,135 @@ body::-webkit-scrollbar {
 .snap-child {
   min-height: 100vh;
   scroll-snap-align: center;
+}
+
+/*algoritms styling*/
+.contact-button {
+  font-weight: 800;
+  font-size: 5vh;
+  color: rgba(0, 0, 0, 0.5);
+  background: white;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  width: 15vh;
+  height: 15vh;
+  transition: all 200ms ease-in;
+}
+
+.contact-button:hover {
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid white;
+  color: white;
+}
+
+.contact-button-text {
+  color: white;
+  font-size: 1.2em;
+}
+
+.algo-panel-child {
+  padding: 50px;
+}
+
+.algo-right-panel {
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.algo-left-panel {
+  padding: 0px !important;
+}
+
+.algo-left-subtitle {
+  font-size: 3vh;
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 50px;
+}
+
+.algo-left-title {
+  font-size: 5vh;
+  padding-left: 50px;
+}
+
+.algo-left-text {
+  font-size: 2vh;
+  color: black;
+}
+
+.algo-left-header {
+  font-size: 3vh;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*Menu button inside algo panel*/
+.menu-button {
+  border: none !important;
+  background: none !important;
+  padding: 0px !important;
+}
+
+/*Footer for left algo panel*/
+.algo-footer {
+  color: white;
+  padding: 5vh;
+  font-size: 2vh;
+  text-align: center;
+  background: #264653;
+  width: 100%;
+  transition: all 200ms ease-in;
+  display: block;
+  text-align: left;
+}
+
+.algo-footer:hover {
+  background: #2a9d8f;
+  color: white;
+}
+
+/* Sketch */
+.positive {
+  width: 2em;
+  height: 2em;
+  background: #457B9D;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.positive-chosen {
+  width: 2em;
+  height: 2em;
+  background: #457B9D;
+  display: inline-block;
+  border-radius: 10px;
+  border: 4px solid #e63946;
+}
+
+.negative {
+  width: 2em;
+  height: 2em;
+  background: #F4A261;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.negative-chosen {
+  width: 2em;
+  height: 2em;
+  background: #F4A261;
+  display: inline-block;
+  border-radius: 10px;
+  border: 4px solid #e63946;
+}
+
+/* Neural network */
+.start-stop-button {
+  padding: 1.5em;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
 }
