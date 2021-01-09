@@ -200,11 +200,12 @@ body{
 }
 
 .about-outer p a:hover {
-  padding: 2px;
+  padding: 4px;
   border-radius: 1px;
   background: black;
   color: white;
   text-decoration: none;
+  border-radius: 10px;
 }
 
 #about-us-section {
@@ -254,6 +255,7 @@ body{
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
