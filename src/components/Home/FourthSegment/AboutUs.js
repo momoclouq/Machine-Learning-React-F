@@ -73,6 +73,26 @@ class AboutUs extends Component {
                             <h1 className="about-name">Pham Hoang Minh</h1>
                         </Animated>
                     </div>
+                    <div className="column about-centerpiece">
+                        <Animated 
+                            animationIn="bounceInLeft" 
+                            animationOut="fadeOut"
+                            animationInDuration="800"
+                            isVisible={this.state.visible}>
+                            <img src={avatar} alt="Avatar"/>
+                            <h1 className="about-name">Nguyen Truc Nhan</h1>
+                        </Animated>
+                    </div>
+                    <div className="column about-centerpiece">
+                        <Animated 
+                            animationIn="bounceInLeft" 
+                            animationOut="fadeOut"
+                            animationInDuration="800"
+                            isVisible={this.state.visible}>
+                            <img src={avatar} alt="Avatar"/>
+                            <h1 className="about-name">Do Ha Minh Long</h1>
+                        </Animated>
+                    </div>
                 </div>
             </div>
         );
