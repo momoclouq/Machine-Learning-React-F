@@ -191,6 +191,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .about-outer p a {
@@ -229,6 +230,7 @@ body{
 
 .about-link {
   color: white;
+  text-decoration: none;
 }
 
 .about-name {
@@ -247,10 +249,11 @@ body{
 
 /*snapping elements and scrollbar*/
 .snap-container {
-  scroll-snap-type: y proximity;
   overflow: scroll;
-  overflow-x: hidden;
   height: 100vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
 
 body::-webkit-scrollbar {

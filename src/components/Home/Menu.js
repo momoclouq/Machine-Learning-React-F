@@ -1,36 +1,24 @@
 import React from 'react';
-import {Component} from "react";
 
-//Link for react-router
-import {Link} from "react-router-dom";
-
-//icon for dropdown menu
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faAlignLeft} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-class Menu extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            menu_open: false
-        }
-    }
+import { Link } from 'react-router-dom';
 
+class Menu extends React.Component {
     componentDidMount() {
-        const dropdownTrigger = document.querySelector('.dropdown-trigger');
         const dropdown = document.querySelector('.dropdown');
+        const dropdowns = document.querySelectorAll('.dropdown:not(.is-hoverable)');
 
         dropdown.addEventListener('click', function(event) {
-            console.log('focused');
             event.stopPropagation();
             dropdown.classList.toggle('is-active');
         });
 
-        document.addEventListener('click', function(event){
-            console.log('out');
-            event.stopPropagation();
-            dropdown.classList.toggle('is-active');
+        document.addEventListener('click', function(e) {
+            dropdowns.forEach((element) => {
+                element.classList.remove('is-active');
+            });
         });
     }
 
@@ -72,6 +60,5 @@ class Menu extends React.Component {
         )
     }
 }
-
 
 export default Menu;

@@ -12,10 +12,10 @@ import {
 //import types from Algorithm
 import RegressionAlgorithm from "./components/Algorithm/Types/LinearRegression/LinearRegressionAlgorithm";
 import LogisiticAlgorithm from "./components/Algorithm/Types/LogisticRegression/LogisticRegressionAlgorithm";
-import NeuralNetworkAlgorithm from "./components/Algorithm/Types/NeuralNetworkAlgorithm";
-import KMeanClusteringAlgorithm from "./components/Algorithm/Types/KMeanAlgorithm";
-import KNearestNeighborAlgorithm from "./components/Algorithm/Types/KNearestNeighborAlgorithm";
-import ObjectDetectionAlgorithm from "./components/Algorithm/Types/ObjectDetectionAlgorithm";
+import NeuralNetworkAlgorithm from "./components/Algorithm/Types/NeuralNetwork/NeuralNetworkAlgorithm";
+import KMeanClusteringAlgorithm from "./components/Algorithm/Types/KMean/KMeanAlgorithm";
+import KNearestNeighborAlgorithm from "./components/Algorithm/Types/NearestNeighbors/KNearestNeighborAlgorithm";
+import ObjectDetectionAlgorithm from "./components/Algorithm/Types/ObjectDetection/ObjectDetectionAlgorithm";
 
 //import component for scrolling control
 import ScrollToTop from "./components/Common/ScrollToTop";

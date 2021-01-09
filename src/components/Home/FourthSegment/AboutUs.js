@@ -49,7 +49,7 @@ class AboutUs extends Component {
         return(
             <div className="about-outer">
                 <h1 className="about-title">About</h1>
-                <p className="about-content">The Machine Learning Illustrated project was created by Phat and Minh, two undergraduates at RMIT university. The goals of this project is to make machine learning algorithms more intuitive and accessible. It is also heavily influenced by <a href="https://seeing-theory.brown.edu/">Seeing Theory</a></p>
+                <p className="about-content">The Machine Learning Illustrated project was created by Phat and Minh, two undergraduates at RMIT university. The goals of this project is to make machine learning algorithms more intuitive and accessible. It is also heavily influenced by <a href="https://seeing-theory.brown.edu/" style={{textDecoration: "none"}}>Seeing Theory</a></p>
                 <h1 className="about-title">Authors</h1>
 
                 <div className="columns">
