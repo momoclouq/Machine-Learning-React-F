@@ -23,7 +23,7 @@ export default (props) => {
         props.onReset();
     }
 
-    return <div>
+    return <div style={{textAlign: "center"}}>
             <div className="columns" style={{width: "80%", margin: "auto", marginBottom: "0.5em", textAlign: "center"}}>
                 <div className="column" style={{textAlign: "center"}}>
                     <div
