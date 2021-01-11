@@ -14,7 +14,10 @@ check **structure.md** file
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
+or
+### `yarn start` 
+if you use yarn
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

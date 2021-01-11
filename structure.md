@@ -10,7 +10,8 @@ Overview - Coding:
 - All components are in **/components** directory
 - **components/Algorithms** directory stores all ML algorithms (Primary user is **Phat**)
 - **components/Home** directory stores the files related to the homepage (Primary user if **Minh**)
-- **index.css** stores all the CSS for the project (Primary user is **Long**)
+- **index.css** stores most of the CSS for the project (Primary user is **Long and Minh**)
+- **style.css** stores some minor CSS for the algorithm (Primary user is **Phat**)
 - **/images** directory stores all images used in the project
 
 Overview - design:
@@ -33,8 +34,7 @@ Just to call the "App" component, nothing changed here
 ----------------------
 
 ## Homepage
-
-----------------------
+- Overall scrollbar changes: remove the original scrollbar and replace it with **scroll: overflow** and webkit re-design 
 
 ### Home/Home.js
 "Home" component, which represent the homepage, includes 4 sub-segments
@@ -52,12 +52,22 @@ Represent the navigation bar, include a dropdown menu (**Menu.js**) and a logo o
 ----------------------
 
 ### Home/Menu.js
-Represent a dropdown menu which contains the links to other parts of the website:  algorithms and homepage.
+Represent a dropdown menu which contains the links to other parts of the website:  algorithms and homepage. 
 
 ----------------------
 
 ### Home/FirstSegment/Veil.js
 A basic introduction panel for the homepage, introducing design skills of the group
+
+----------------------
+
+### Home/FirstSegment/Sketch.js
+A special star fall effect for the homepage
+
+----------------------
+
+### Home/FirstSegment/Navbar.js
+Navigation bar for the homepage, including links to other parts of the website (**Deprecated - should be deleted**)
 
 ----------------------
 
@@ -128,22 +138,19 @@ A panel including styling and image for tensorflow.js
 ----------------------
 
 ### Home/FourthSegment/AboutUs.js
-A panel dedicated for displaying information about the creators Us!, similar in design with PoweredBy.js
+A panel dedicated for displaying information about the creators Us!, similar in design with PoweredBy.js, using the same libraries
 
 ----------------------
 
 ## Algorithm
-
-----------------------
-
-### Need to be updated
+- Overall idea: Each algorithm page will include 1 main Panel containing 2 sub Panel
+- 2 sub Panel: LeftPanel.js and RightPanel.js. LeftPanel.js will include algorithm's information, mathematical notations, equations and RightPanel.js will include the actual visualization (pictures and interactive implementation)
+- Technologies used include: P5.js, tensorflow.js, convnetjs, ...
 
 ----------------------
 
 ## Common
-Store components used by every other components
-
-----------------------
+- Store components used by every other components
 
 ### Common/ScrollToTop.js
 A special component with the main function is to move the webpage view to the top everytime the pages change.
