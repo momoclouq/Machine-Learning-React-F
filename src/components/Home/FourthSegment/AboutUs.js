@@ -1,5 +1,8 @@
 //import images for each members
-import avatar from "../../../images/avatar.png";
+import avatarMinh from "../../../images/minh.jpg";
+import avatarPhat from "../../../images/phat.jpg";
+import avatarNhan from "../../../images/nhan.jpg";
+import avatarLong from "../../../images/long.jpg";
 
 import React from 'react';
 import {Component} from 'react';
@@ -46,6 +49,11 @@ class AboutUs extends Component {
     }
 
     render(){
+        const style = {
+            maxWidth: "400px",
+            maxHeight: "350px",
+        };
+
         return(
             <div className="about-outer">
                 <h1 className="about-title">About</h1>
@@ -59,7 +67,7 @@ class AboutUs extends Component {
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
-                            <img src={avatar} alt="Avatar"/>
+                            <img style={style} src={avatarPhat} alt="Avatar"/>
                             <h1 className="about-name">Tran Son Phat</h1>
                         </Animated>
                     </div>
@@ -69,7 +77,7 @@ class AboutUs extends Component {
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
-                            <img src={avatar} alt="Avatar"/>
+                            <img src={avatarMinh} alt="Avatar"/>
                             <h1 className="about-name">Pham Hoang Minh</h1>
                         </Animated>
                     </div>
@@ -79,7 +87,7 @@ class AboutUs extends Component {
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
-                            <img src={avatar} alt="Avatar"/>
+                            <img src={avatarNhan} alt="Avatar"/>
                             <h1 className="about-name">Nguyen Truc Nhan</h1>
                         </Animated>
                     </div>
@@ -89,7 +97,7 @@ class AboutUs extends Component {
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
-                            <img src={avatar} alt="Avatar"/>
+                            <img src={avatarLong} alt="Avatar"/>
                             <h1 className="about-name">Do Ha Minh Long</h1>
                         </Animated>
                     </div>
@@ -98,5 +106,5 @@ class AboutUs extends Component {
         );
     }
 }
-
+    
 export default AboutUs;

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -327,6 +331,7 @@ body::-webkit-scrollbar {
 
 .algo-left-panel {
   padding: 0px !important;
+  min-width: 600px;
 }
 
 .algo-left-subtitle {
