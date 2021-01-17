@@ -57,11 +57,11 @@ class ODSketch extends React.Component {
 
     setup(p5, canvasParentRef) {
         //Create canvas
-        p5.createCanvas(640, 480).parent(canvasParentRef);
+        p5.createCanvas(480, 360).parent(canvasParentRef);
   
         //Create this.capture
         this.capture = p5.createCapture(p5.VIDEO);
-        this.capture.size(640, 480);
+        this.capture.size(480, 360);
         this.capture.hide();
         
         //Start detection
@@ -78,7 +78,13 @@ class ODSketch extends React.Component {
             //Draw this.detections
             this.detections.forEach(detection => {
                 //Get the coordinates
-                const { x, y, width, height, label } = detection;
+                let { x, y, width, height, label } = detection;
+
+                //Format x and y
+                x = x * 3 / 4;
+                y = y * 3 / 4;
+                width = width * 3 / 4;
+                height = height * 3 / 4;
                 
                 //Display bounding boxes
                 p5.strokeWeight(3);
