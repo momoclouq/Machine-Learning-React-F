@@ -252,6 +252,17 @@ body{
   align-items: center;
 }
 
+.avatar-row {
+  padding: 1vw 1vw;
+}
+
+.avatar-image {
+  min-width: 15vw;
+  min-height: 15vw;
+  max-width: 15vw;
+  max-height: 15vw;
+}
+
 /*snapping elements and scrollbar*/
 .snap-container {
   overflow: scroll;

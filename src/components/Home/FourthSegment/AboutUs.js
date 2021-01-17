@@ -1,8 +1,8 @@
 //import images for each members
-import avatarMinh from "../../../images/minh.jpg";
-import avatarPhat from "../../../images/phat.jpg";
-import avatarNhan from "../../../images/nhan.jpg";
-import avatarLong from "../../../images/long.jpg";
+import avatarMinh from "../../../images/avatars/minh_image.jpg";
+import avatarPhat from "../../../images/avatars/phat_image.jpg";
+import avatarNhan from "../../../images/avatars/nhan_image.jpg";
+import avatarLong from "../../../images/avatars/long_image.jpg";
 
 import React from 'react';
 import {Component} from 'react';
@@ -49,35 +49,20 @@ class AboutUs extends Component {
     }
 
     render(){
-        const style = {
-            maxWidth: "400px",
-            maxHeight: "350px",
-        };
-
         return(
             <div className="about-outer">
                 <h1 className="about-title">About</h1>
                 <p className="about-content">The Machine Learning Illustrated project was created by Phat and Minh, two undergraduates at RMIT university. The goals of this project is to make machine learning algorithms more intuitive and accessible. It is also heavily influenced by <a href="https://seeing-theory.brown.edu/" style={{textDecoration: "none"}}>Seeing Theory</a></p>
                 <h1 className="about-title">Authors</h1>
 
-                <div className="columns">
+                <div className="columns avatar-row">
                     <div className="column about-centerpiece">
                         <Animated 
                             animationIn="bounceInLeft" 
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
-                            <img style={style} src={avatarPhat} alt="Avatar"/>
-                            <h1 className="about-name">Tran Son Phat</h1>
-                        </Animated>
-                    </div>
-                    <div className="column about-centerpiece">
-                        <Animated 
-                            animationIn="bounceInLeft" 
-                            animationOut="fadeOut"
-                            animationInDuration="800"
-                            isVisible={this.state.visible}>
-                            <img src={avatarMinh} alt="Avatar"/>
+                            <img className="avatar-image" src={avatarMinh} alt="Avatar"/>
                             <h1 className="about-name">Pham Hoang Minh</h1>
                         </Animated>
                     </div>
@@ -87,7 +72,17 @@ class AboutUs extends Component {
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
-                            <img src={avatarNhan} alt="Avatar"/>
+                            <img className="avatar-image" src={avatarPhat} alt="Avatar"/>
+                            <h1 className="about-name">Tran Son Phat</h1>
+                        </Animated>
+                    </div>
+                    <div className="column about-centerpiece">
+                        <Animated 
+                            animationIn="bounceInLeft" 
+                            animationOut="fadeOut"
+                            animationInDuration="800"
+                            isVisible={this.state.visible}>
+                            <img className="avatar-image" src={avatarNhan} alt="Avatar"/>
                             <h1 className="about-name">Nguyen Truc Nhan</h1>
                         </Animated>
                     </div>
@@ -97,7 +92,7 @@ class AboutUs extends Component {
                             animationOut="fadeOut"
                             animationInDuration="800"
                             isVisible={this.state.visible}>
-                            <img src={avatarLong} alt="Avatar"/>
+                            <img className="avatar-image" src={avatarLong} alt="Avatar"/>
                             <h1 className="about-name">Do Ha Minh Long</h1>
                         </Animated>
                     </div>
