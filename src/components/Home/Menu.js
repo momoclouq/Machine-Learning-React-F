@@ -10,11 +10,12 @@ class Menu extends React.Component {
         const dropdown = document.querySelector('.dropdown');
         const dropdowns = document.querySelectorAll('.dropdown:not(.is-hoverable)');
 
+        //click the menu button for dropdown is-active
         dropdown.addEventListener('click', function(event) {
             event.stopPropagation();
             dropdown.classList.toggle('is-active');
         });
-
+        //click anywhere else on web website to remove is-active
         document.addEventListener('click', function(e) {
             dropdowns.forEach((element) => {
                 element.classList.remove('is-active');

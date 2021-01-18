@@ -44,6 +44,7 @@ class AboutUs extends Component {
     }
 
     isInViewport(el){
+        //check if element is in the viewport
         let rect = el.getBoundingClientRect();
         return rect.bottom <= window.innerHeight + 10;
     }

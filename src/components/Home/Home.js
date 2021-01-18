@@ -31,12 +31,12 @@ class Home extends Component {
                 </section>
                 {/*first segment*/}
                 <section className="snap-child">
-                    <Veil smoothScroll={this.SmoothVerticalScrolling}/> {/*introduction panel component - status - in production*/}
+                    <Veil smoothScroll={this.SmoothVerticalScrolling}/> 
                 </section>
 
                 {/*second segment*/}
                 <section className="snap-child" ref={this.myRef}>
-                    <Algorithms /> {/*the algorithm carousel component - status - in production*/}
+                    <Algorithms /> 
                 </section>
 
                 {/*third segment*/}
